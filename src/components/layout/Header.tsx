@@ -3,11 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Menu, X, Swords } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { EnrollNowModal } from "@/components/EnrollNowModal";
+import { ChessKnightIcon } from "@/components/icons/ChessKnightIcon";
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -26,7 +27,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2" onClick={closeMobileMenu}>
-          <Swords className="h-8 w-8 text-primary" />
+          <ChessKnightIcon className="h-8 w-8 text-primary" />
           <span className="text-xl font-bold font-headline text-primary">
             Vardhan Chess Academy
           </span>
@@ -65,7 +66,7 @@ export function Header() {
               <div className="flex flex-col h-full">
                 <div className="flex justify-between items-center p-4 border-b">
                    <Link href="/" className="flex items-center gap-2" onClick={closeMobileMenu}>
-                    <Swords className="h-6 w-6 text-primary" />
+                    <ChessKnightIcon className="h-6 w-6 text-primary" />
                     <span className="text-lg font-bold font-headline text-primary">
                       Vardhan Academy
                     </span>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Swords, Phone, Mail } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
+import { ChessKnightIcon } from '@/components/icons/ChessKnightIcon';
 
 export function Footer() {
   const navLinks = [
@@ -18,7 +19,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1 space-y-4">
             <Link href="/" className="flex items-center gap-2">
-              <Swords className="h-8 w-8 text-primary" />
+              <ChessKnightIcon className="h-8 w-8 text-primary" />
               <span className="text-xl font-bold font-headline text-primary">
                 Vardhan Chess Academy
               </span>
