@@ -8,7 +8,8 @@ import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { formSchema, submitContactForm, type FormValues } from "../actions";
+import { submitContactForm } from "../actions";
+import { formSchema, type FormValues } from "../schema";
 
 export function ContactForm() {
   const { toast } = useToast();
