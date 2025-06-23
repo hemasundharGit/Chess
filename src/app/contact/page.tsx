@@ -28,8 +28,8 @@ export default function ContactPage() {
                 <Mail className="h-8 w-8 text-primary mr-4 shrink-0" />
                 <div>
                   <h3 className="font-semibold text-lg">Email</h3>
-                   <a href="mailto:coach@chessascent.com" className="text-foreground/80 hover:text-primary">
-                    coach@chessascent.com
+                   <a href="mailto:coach@vardhanchessacademy.com" className="text-foreground/80 hover:text-primary">
+                    coach@vardhanchessacademy.com
                   </a>
                 </div>
               </Card>

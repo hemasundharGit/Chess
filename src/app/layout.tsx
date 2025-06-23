@@ -7,8 +7,8 @@ import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsAppButton } from "@/components/FloatingWhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Chess Ascent Academy",
-  description: "Master Chess with Expert Coaching. Join Chess Ascent Academy to elevate your game with personalized training programs.",
+  title: "Vardhan Chess Academy",
+  description: "Master Chess with Expert Coaching. Join Vardhan Chess Academy to elevate your game with personalized training programs.",
   keywords: "chess, chess coaching, chess academy, chess lessons, learn chess, chess master",
 };
 

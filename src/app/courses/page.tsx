@@ -12,7 +12,7 @@ const courses = [
     features: ['Rules & Board Setup', 'Basic Tactics & Puzzles', 'Opening Principles', 'Simple Endgames'],
     duration: '12 Weeks',
     fee: '₹6,000',
-    enquiryMessage: "Hello! I'm interested in the Beginner Program at Chess Ascent Academy. Could you please provide more details?",
+    enquiryMessage: "Hello! I'm interested in the Beginner Program at Vardhan Chess Academy. Could you please provide more details?",
   },
   {
     title: 'Intermediate Program',
@@ -20,7 +20,7 @@ const courses = [
     features: ['Advanced Tactics', 'Positional Understanding', 'Middlegame Strategy', 'Complex Endgames'],
     duration: '16 Weeks',
     fee: '₹9,000',
-    enquiryMessage: "Hello! I'm interested in the Intermediate Program at Chess Ascent Academy. Could you please provide more details?",
+    enquiryMessage: "Hello! I'm interested in the Intermediate Program at Vardhan Chess Academy. Could you please provide more details?",
   },
   {
     title: 'Advanced Program',
@@ -28,7 +28,7 @@ const courses = [
     features: ['Opening Repertoire Building', 'Advanced Strategic Planning', 'Prophylactic Thinking', 'Grandmaster Game Analysis'],
     duration: '20 Weeks',
     fee: '₹15,000',
-    enquiryMessage: "Hello! I'm interested in the Advanced Program at Chess Ascent Academy. Could you please provide more details?",
+    enquiryMessage: "Hello! I'm interested in the Advanced Program at Vardhan Chess Academy. Could you please provide more details?",
   },
 ];
 

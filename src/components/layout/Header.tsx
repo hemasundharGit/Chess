@@ -28,7 +28,7 @@ export function Header() {
         <Link href="/" className="flex items-center gap-2" onClick={closeMobileMenu}>
           <Swords className="h-8 w-8 text-primary" />
           <span className="text-xl font-bold font-headline text-primary">
-            Chess Ascent Academy
+            Vardhan Chess Academy
           </span>
         </Link>
 
@@ -67,7 +67,7 @@ export function Header() {
                    <Link href="/" className="flex items-center gap-2" onClick={closeMobileMenu}>
                     <Swords className="h-6 w-6 text-primary" />
                     <span className="text-lg font-bold font-headline text-primary">
-                      Chess Ascent
+                      Vardhan Academy
                     </span>
                   </Link>
                   <Button variant="ghost" size="icon" onClick={closeMobileMenu}>

@@ -2,33 +2,13 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import * as z from "zod";
 import { useToast } from "@/hooks/use-toast";
 
 import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-
-const formSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
-  email: z.string().email({ message: "Please enter a valid email address." }),
-  subject: z.string().min(5, { message: "Subject must be at least 5 characters." }),
-  message: z.string().min(10, { message: "Message must be at least 10 characters." }),
-});
-
-type FormValues = z.infer<typeof formSchema>;
-
-async function submitContactForm(data: FormValues) {
-    "use server";
-    // This is a server action. In a real app, you would send an email here.
-    // For this example, we'll just log the data to the console.
-    console.log("Contact form submitted:", data);
-    
-    // You can add email sending logic here using a library like Nodemailer or an API like SendGrid.
-    
-    return { success: true, message: "Thank you for your message! We will get back to you soon." };
-}
+import { formSchema, submitContactForm, type FormValues } from "../actions";
 
 export function ContactForm() {
   const { toast } = useToast();

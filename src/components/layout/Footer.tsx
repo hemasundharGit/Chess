@@ -10,7 +10,7 @@ export function Footer() {
   ];
 
   const coachPhoneNumber = '911234567890';
-  const coachEmail = 'coach@chessascent.com';
+  const coachEmail = 'coach@vardhanchessacademy.com';
 
   return (
     <footer className="bg-primary/10 border-t">
@@ -20,7 +20,7 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2">
               <Swords className="h-8 w-8 text-primary" />
               <span className="text-xl font-bold font-headline text-primary">
-                Chess Ascent Academy
+                Vardhan Chess Academy
               </span>
             </Link>
             <p className="text-foreground/70">
@@ -59,7 +59,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t text-center text-foreground/60">
-          <p>&copy; {new Date().getFullYear()} Chess Ascent Academy. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Vardhan Chess Academy. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
