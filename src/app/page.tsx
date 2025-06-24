@@ -12,7 +12,7 @@ export default function Home() {
     {
       name: 'Anika Sharma',
       title: 'Parent of a Student',
-      quote: 'The coaching is exceptional. My son\'s rating jumped 200 points in just three months. The personalized attention to his weaknesses was key.',
+      quote: "The coaching is exceptional. My son's rating jumped 200 points in just three months. The personalized attention to his weaknesses was key.",
       avatar: 'AS',
     },
     {
@@ -30,9 +30,9 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center bg-background">
       {/* Hero Section */}
-      <section className="w-full bg-primary/10 py-20 md:py-32">
+      <section className="w-full bg-card py-20 md:py-32">
         <div className="container mx-auto grid md:grid-cols-2 gap-8 items-center px-4">
           <div className="space-y-6 text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-headline font-bold text-primary tracking-tight">
@@ -62,9 +62,9 @@ export default function Home() {
       <section className="w-full py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <Card className="border-2 border-primary/20 shadow-lg">
+            <Card className="border-primary/40 bg-card">
               <CardHeader>
-                <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
+                <div className="mx-auto bg-primary/20 p-4 rounded-full w-fit">
                   <Users className="h-10 w-10 text-primary" />
                 </div>
                 <CardTitle className="font-headline text-3xl pt-2">2500+</CardTitle>
@@ -73,9 +73,9 @@ export default function Home() {
                 <p className="text-lg text-foreground/80">Students Trained</p>
               </CardContent>
             </Card>
-            <Card className="border-2 border-primary/20 shadow-lg">
+            <Card className="border-primary/40 bg-card">
               <CardHeader>
-                 <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
+                 <div className="mx-auto bg-primary/20 p-4 rounded-full w-fit">
                   <Star className="h-10 w-10 text-primary" />
                 </div>
                 <CardTitle className="font-headline text-3xl pt-2">9.2 / 10</CardTitle>
@@ -84,9 +84,9 @@ export default function Home() {
                 <p className="text-lg text-foreground/80">Average Rating</p>
               </CardContent>
             </Card>
-            <Card className="border-2 border-primary/20 shadow-lg">
+            <Card className="border-primary/40 bg-card">
               <CardHeader>
-                 <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
+                 <div className="mx-auto bg-primary/20 p-4 rounded-full w-fit">
                   <Crown className="h-10 w-10 text-primary" />
                 </div>
                 <CardTitle className="font-headline text-3xl pt-2">Limited Seats</CardTitle>
@@ -100,7 +100,7 @@ export default function Home() {
       </section>
       
       {/* Coach Bio Section */}
-      <section className="w-full bg-primary/10 py-16 md:py-24">
+      <section className="w-full bg-card py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-5 gap-12 items-center">
             <div className="md:col-span-2 flex justify-center">
@@ -110,7 +110,7 @@ export default function Home() {
                 width={300}
                 height={300}
                 data-ai-hint="chess coach portrait"
-                className="rounded-full border-4 border-accent shadow-2xl aspect-square object-cover"
+                className="rounded-full border-4 border-primary shadow-2xl aspect-square object-cover"
               />
             </div>
             <div className="md:col-span-3 space-y-4 text-center md:text-left">
@@ -132,7 +132,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary text-center mb-12">What Our Students Say</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="flex flex-col justify-between bg-primary/5 shadow-md border-primary/10">
+              <Card key={index} className="flex flex-col justify-between bg-card border-primary/40">
                 <CardContent className="pt-6">
                   <p className="text-foreground/80 italic">"{testimonial.quote}"</p>
                 </CardContent>

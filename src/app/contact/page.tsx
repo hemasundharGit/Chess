@@ -17,14 +17,14 @@ export default function ContactPage() {
           <div>
             <h2 className="text-2xl font-headline font-semibold text-primary mb-6">Contact Information</h2>
             <div className="space-y-6">
-              <Card className="flex items-center p-4 bg-primary/5 border-primary/10">
+              <Card className="flex items-center p-4 bg-card border-primary/40">
                 <Phone className="h-8 w-8 text-primary mr-4 shrink-0" />
                 <div>
                   <h3 className="font-semibold text-lg">Phone</h3>
                   <p className="text-foreground/80">+91 XXXXXXXXXX</p>
                 </div>
               </Card>
-              <Card className="flex items-center p-4 bg-primary/5 border-primary/10">
+              <Card className="flex items-center p-4 bg-card border-primary/40">
                 <Mail className="h-8 w-8 text-primary mr-4 shrink-0" />
                 <div>
                   <h3 className="font-semibold text-lg">Email</h3>
@@ -33,7 +33,7 @@ export default function ContactPage() {
                   </a>
                 </div>
               </Card>
-              <Card className="flex items-center p-4 bg-primary/5 border-primary/10">
+              <Card className="flex items-center p-4 bg-card border-primary/40">
                 <MapPin className="h-8 w-8 text-primary mr-4 shrink-0" />
                 <div>
                   <h3 className="font-semibold text-lg">Location</h3>
@@ -43,7 +43,7 @@ export default function ContactPage() {
             </div>
           </div>
           <div>
-             <Card className="shadow-lg">
+             <Card className="border-primary/40 bg-card">
                 <CardHeader>
                     <CardTitle className="font-headline text-2xl">Send us a Message</CardTitle>
                     <CardDescription>We will get back to you as soon as possible.</CardDescription>

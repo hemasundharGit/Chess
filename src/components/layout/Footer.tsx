@@ -14,7 +14,7 @@ export function Footer() {
   const coachEmail = 'coach@vardhanchessacademy.com';
 
   return (
-    <footer className="bg-primary/10 border-t">
+    <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1 space-y-4">
@@ -59,7 +59,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t text-center text-foreground/60">
+        <div className="mt-12 pt-8 border-t border-border text-foreground/60">
           <p>&copy; {new Date().getFullYear()} Vardhan Chess Academy. All Rights Reserved.</p>
         </div>
       </div>

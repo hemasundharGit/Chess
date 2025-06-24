@@ -45,7 +45,7 @@ export default function CoursesPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           {courses.map((course) => (
-            <Card key={course.title} className="flex flex-col border-2 border-primary/10 hover:border-primary/30 hover:shadow-xl transition-all duration-300">
+            <Card key={course.title} className="flex flex-col bg-card border-primary/40 hover:border-primary/80 transition-all duration-300">
               <CardHeader>
                 <CardTitle className="font-headline text-2xl text-primary">{course.title}</CardTitle>
                 <CardDescription>{course.description}</CardDescription>
@@ -54,7 +54,7 @@ export default function CoursesPage() {
                 <ul className="space-y-3">
                   {course.features.map((feature) => (
                     <li key={feature} className="flex items-center gap-3">
-                      <CheckCircle className="h-5 w-5 text-accent" />
+                      <CheckCircle className="h-5 w-5 text-primary" />
                       <span className="text-foreground/90">{feature}</span>
                     </li>
                   ))}

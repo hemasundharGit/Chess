@@ -1,6 +1,7 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import { Badge } from '@/components/ui/badge';
+import { Badge, badgeVariants } from '@/components/ui/badge';
+import type { VariantProps } from 'class-variance-authority';
 
 const scheduleData = [
   { level: 'Beginner (Batch A)', day: 'Monday & Wednesday', time: '4:00 PM - 5:00 PM', status: 'Open' },
@@ -11,7 +12,7 @@ const scheduleData = [
   { level: 'Weekend All-Levels', day: 'Saturday & Sunday', time: '10:00 AM - 12:00 PM', status: 'Few Seats Left' },
 ];
 
-const getStatusBadgeVariant = (status: string) => {
+const getStatusBadgeVariant = (status: string): VariantProps<typeof badgeVariants>["variant"] => {
   switch (status) {
     case 'Open':
       return 'default';
@@ -26,7 +27,7 @@ const getStatusBadgeVariant = (status: string) => {
 
 export default function SchedulePage() {
   return (
-    <div className="bg-primary/5">
+    <div className="bg-background">
       <div className="container mx-auto px-4 py-16 sm:py-24">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary">Class Schedule</h1>
@@ -35,11 +36,11 @@ export default function SchedulePage() {
           </p>
         </div>
 
-        <Card className="overflow-hidden shadow-lg">
+        <Card className="overflow-hidden border-primary/40 bg-card">
           <CardContent className="p-0">
             <Table>
               <TableHeader>
-                <TableRow>
+                <TableRow className="border-border">
                   <TableHead className="w-[40%] font-headline text-lg">Program Level</TableHead>
                   <TableHead className="font-headline text-lg">Days</TableHead>
                   <TableHead className="font-headline text-lg">Time</TableHead>
@@ -48,18 +49,12 @@ export default function SchedulePage() {
               </TableHeader>
               <TableBody>
                 {scheduleData.map((item) => (
-                  <TableRow key={item.level} className="text-md">
+                  <TableRow key={item.level} className="text-md border-border">
                     <TableCell className="font-medium text-primary">{item.level}</TableCell>
                     <TableCell>{item.day}</TableCell>
                     <TableCell>{item.time}</TableCell>
                     <TableCell className="text-right">
-                       <Badge 
-                          className={
-                            item.status === 'Open' ? 'bg-green-500 hover:bg-green-600' :
-                            item.status === 'Few Seats Left' ? 'bg-yellow-500 hover:bg-yellow-600 text-black' :
-                            item.status === 'Full' ? 'bg-red-600 hover:bg-red-700' : ''
-                          }
-                        >
+                       <Badge variant={getStatusBadgeVariant(item.status)}>
                         {item.status}
                        </Badge>
                     </TableCell>
