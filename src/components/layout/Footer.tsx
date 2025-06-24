@@ -10,12 +10,11 @@ export function Footer() {
     { href: '/contact', label: 'Contact' },
   ];
 
-  const coachPhoneNumber = '911234567890';
   const coachEmail = 'coach@vardhanchessacademy.com';
 
   return (
     <footer className="bg-card border-t border-border">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1 space-y-4">
             <Link href="/" className="flex items-center gap-2">
@@ -47,7 +46,9 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-foreground/80">
                 <Phone className="h-4 w-4 text-primary" />
-                <span>+91 XXXXXXXXXX</span>
+                <a href="tel:+911234567890" className="hover:text-primary transition-colors">
+                  +91 12345 67890
+                </a>
               </li>
               <li className="flex items-center gap-2 text-foreground/80">
                 <Mail className="h-4 w-4 text-primary" />

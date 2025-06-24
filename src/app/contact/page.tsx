@@ -5,7 +5,7 @@ import { ContactForm } from "./_components/ContactForm";
 export default function ContactPage() {
   return (
     <div className="bg-background">
-      <div className="container mx-auto px-4 py-16 sm:py-24">
+      <div className="container mx-auto py-16 sm:py-24">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary">Get In Touch</h1>
           <p className="mt-4 text-lg text-foreground/80 max-w-2xl mx-auto">
@@ -21,7 +21,9 @@ export default function ContactPage() {
                 <Phone className="h-8 w-8 text-primary mr-4 shrink-0" />
                 <div>
                   <h3 className="font-semibold text-lg">Phone</h3>
-                  <p className="text-foreground/80">+91 XXXXXXXXXX</p>
+                  <a href="tel:+911234567890" className="text-foreground/80 hover:text-primary">
+                    +91 12345 67890
+                  </a>
                 </div>
               </Card>
               <Card className="flex items-center p-4 bg-card border-primary/40">

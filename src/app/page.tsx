@@ -33,7 +33,7 @@ export default function Home() {
     <div className="flex flex-col items-center bg-background">
       {/* Hero Section */}
       <section className="w-full bg-card py-20 md:py-32">
-        <div className="container mx-auto grid md:grid-cols-2 gap-8 items-center px-4">
+        <div className="container mx-auto grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6 text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-headline font-bold text-primary tracking-tight">
               Master Chess with Expert Coaching
@@ -60,7 +60,7 @@ export default function Home() {
 
       {/* Highlights Section */}
       <section className="w-full py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <Card className="border-primary/40 bg-card">
               <CardHeader>
@@ -101,7 +101,7 @@ export default function Home() {
       
       {/* Coach Bio Section */}
       <section className="w-full bg-card py-16 md:py-24">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
           <div className="grid md:grid-cols-5 gap-12 items-center">
             <div className="md:col-span-2 flex justify-center">
               <Image
@@ -128,7 +128,7 @@ export default function Home() {
 
       {/* Testimonials Section */}
       <section className="w-full py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary text-center mb-12">What Our Students Say</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
