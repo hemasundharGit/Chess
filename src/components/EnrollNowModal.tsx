@@ -3,6 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
+import React from "react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -30,23 +31,22 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
-import React from "react";
 
 const COACH_PHONE_NUMBER = "911234567890"; // Replace with actual number
 
+// Define the options in a single place for consistency
+const availabilityOptions = [
+    { value: "15-mins", label: "15 mins" },
+    { value: "30-mins", label: "30 mins" },
+    { value: "1-hour", label: "1 hour" },
+];
+
+// Define the schema using the values from our options array
 const formSchema = z.object({
-  name: z.string().min(2, {
-    message: "Name must be at least 2 characters.",
-  }),
-  phone: z.string().regex(/^\d{10,15}$/, {
-    message: "Please enter a valid phone number.",
-  }),
-  email: z.string().email({
-    message: "Please enter a valid email address.",
-  }),
-  availability: z.enum(["15-mins", "30-mins", "1-hour"], {
-    required_error: "Please select your availability.",
-  }),
+  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
+  phone: z.string().regex(/^\d{10,15}$/, { message: "Please enter a valid phone number." }),
+  email: z.string().email({ message: "Please enter a valid email address." }),
+  availability: z.enum(["15-mins", "30-mins", "1-hour"], { required_error: "Please select your availability." }),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -66,18 +66,13 @@ export function EnrollNowModal({ children }: { children: React.ReactNode }) {
   });
 
   const onSubmit = (values: FormValues) => {
-    let displayAvailability = "";
-    switch (values.availability) {
-        case "15-mins": displayAvailability = "15 mins"; break;
-        case "30-mins": displayAvailability = "30 mins"; break;
-        case "1-hour": displayAvailability = "1 hour"; break;
-    }
-    
+    // Find the full option object to get the label for the message
+    const selectedOption = availabilityOptions.find(option => option.value === values.availability);
+    const displayAvailability = selectedOption ? selectedOption.label : values.availability;
+
     const message = `Hello! I'm interested in Visionary Rooks Chess Academy.\nName: ${values.name}\nPhone: ${values.phone}\nEmail: ${values.email}\nI'm available for a ${displayAvailability} call.\nPlease get back to me. Thank you!`;
 
-    const whatsappUrl = `https://wa.me/${COACH_PHONE_NUMBER}?text=${encodeURIComponent(
-      message
-    )}`;
+    const whatsappUrl = `https://wa.me/${COACH_PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
 
     window.open(whatsappUrl, '_blank');
 
@@ -154,9 +149,11 @@ export function EnrollNowModal({ children }: { children: React.ReactNode }) {
                       </Trigger>
                     </FormControl>
                     <SelectContent>
-                      <SelectItem value="15-mins">15 mins</SelectItem>
-                      <SelectItem value="30-mins">30 mins</SelectItem>
-                      <SelectItem value="1-hour">1 hour</SelectItem>
+                      {availabilityOptions.map(option => (
+                        <SelectItem key={option.value} value={option.value}>
+                          {option.label}
+                        </SelectItem>
+                      ))}
                     </SelectContent>
                   </Select>
                   <FormMessage />
