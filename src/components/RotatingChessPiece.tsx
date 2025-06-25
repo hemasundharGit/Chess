@@ -3,7 +3,7 @@
 import Lottie from "lottie-react";
 import { useEffect, useState } from "react";
 
-const ANIMATION_PATH = "/chess-animation.lottie";
+const ANIMATION_PATH = "/animations/chess-animation.lottie";
 
 export function RotatingChessPiece() {
   const [animationData, setAnimationData] = useState(null);
