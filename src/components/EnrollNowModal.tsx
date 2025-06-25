@@ -7,6 +7,14 @@ import React from "react";
 
 import { Button } from "@/components/ui/button";
 import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import {
   Form,
   FormControl,
   FormField,
@@ -16,14 +24,6 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import {
   Select,
   SelectContent,
   SelectItem,
@@ -32,24 +32,22 @@ import {
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 
-const COACH_PHONE_NUMBER = "911234567890"; // Replace with actual number
+const COACH_PHONE_NUMBER = "911234567890";
 
-// Define the options in a single place for consistency
-const availabilityOptions = [
-    { value: "15-mins", label: "15 mins" },
-    { value: "30-mins", label: "30 mins" },
-    { value: "1-hour", label: "1 hour" },
-];
-
-// Define the schema using the values from our options array
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
   phone: z.string().regex(/^\d{10,15}$/, { message: "Please enter a valid phone number." }),
   email: z.string().email({ message: "Please enter a valid email address." }),
-  availability: z.enum(["15-mins", "30-mins", "1-hour"], { required_error: "Please select your availability." }),
+  availability: z.string().min(1, { message: "Please select an availability." }),
 });
 
 type FormValues = z.infer<typeof formSchema>;
+
+const availabilityOptions = [
+  { value: "15-mins", label: "15 mins" },
+  { value: "30-mins", label: "30 mins" },
+  { value: "1-hour", label: "1 hour" },
+];
 
 export function EnrollNowModal({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = React.useState(false);
@@ -61,24 +59,26 @@ export function EnrollNowModal({ children }: { children: React.ReactNode }) {
       name: "",
       phone: "",
       email: "",
-      availability: "15-mins",
+      availability: "",
     },
   });
 
   const onSubmit = (values: FormValues) => {
-    // Find the full option object to get the label for the message
-    const selectedOption = availabilityOptions.find(option => option.value === values.availability);
+    const selectedOption = availabilityOptions.find(
+      (option) => option.value === values.availability
+    );
     const displayAvailability = selectedOption ? selectedOption.label : values.availability;
 
     const message = `Hello! I'm interested in Visionary Rooks Chess Academy.\nName: ${values.name}\nPhone: ${values.phone}\nEmail: ${values.email}\nI'm available for a ${displayAvailability} call.\nPlease get back to me. Thank you!`;
+    const whatsappUrl = `https://wa.me/${COACH_PHONE_NUMBER}?text=${encodeURIComponent(
+      message
+    )}`;
 
-    const whatsappUrl = `https://wa.me/${COACH_PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
-
-    window.open(whatsappUrl, '_blank');
+    window.open(whatsappUrl, "_blank");
 
     toast({
-      title: 'Redirecting to WhatsApp...',
-      description: 'Please continue the conversation there.',
+      title: "Redirecting to WhatsApp...",
+      description: "Please continue the conversation there.",
     });
 
     setOpen(false);
@@ -92,7 +92,8 @@ export function EnrollNowModal({ children }: { children: React.ReactNode }) {
         <DialogHeader>
           <DialogTitle className="font-headline text-2xl">Enquire Now</DialogTitle>
           <DialogDescription>
-            Learn more about our Chess Coaching and how we can help your game. Fill out the form and we'll get in touch.
+            Learn more about our Chess Coaching and how we can help your game. Fill
+            out the form and we'll get in touch.
           </DialogDescription>
         </DialogHeader>
         <Form {...form}>
@@ -123,7 +124,7 @@ export function EnrollNowModal({ children }: { children: React.ReactNode }) {
                 </FormItem>
               )}
             />
-             <FormField
+            <FormField
               control={form.control}
               name="email"
               render={({ field }) => (
@@ -142,14 +143,14 @@ export function EnrollNowModal({ children }: { children: React.ReactNode }) {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Availability for a callback</FormLabel>
-                   <Select onValueChange={field.onChange} defaultValue={field.value}>
+                  <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <FormControl>
                       <SelectTrigger>
                         <SelectValue placeholder="Select a time slot" />
-                      </Trigger>
+                      </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      {availabilityOptions.map(option => (
+                      {availabilityOptions.map((option) => (
                         <SelectItem key={option.value} value={option.value}>
                           {option.label}
                         </SelectItem>
@@ -160,7 +161,9 @@ export function EnrollNowModal({ children }: { children: React.ReactNode }) {
                 </FormItem>
               )}
             />
-            <Button type="submit" className="w-full">Request a Callback</Button>
+            <Button type="submit" className="w-full">
+              Request a Callback
+            </Button>
           </form>
         </Form>
       </DialogContent>
