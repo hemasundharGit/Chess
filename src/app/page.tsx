@@ -34,6 +34,9 @@ export default function Home() {
       {/* Hero Section */}
       <section className="w-full bg-card py-20 md:py-32">
         <div className="container mx-auto grid md:grid-cols-2 gap-8 items-center">
+          <div className="flex items-center justify-center">
+             <RotatingChessPiece />
+          </div>
           <div className="space-y-6 text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-headline font-bold text-primary tracking-tight">
               Master Chess with Expert Coaching
@@ -51,9 +54,6 @@ export default function Home() {
                 </Button>
               </EnrollNowModal>
             </div>
-          </div>
-          <div className="flex items-center justify-center">
-             <RotatingChessPiece />
           </div>
         </div>
       </section>
