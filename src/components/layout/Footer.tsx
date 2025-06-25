@@ -10,7 +10,7 @@ export function Footer() {
     { href: '/contact', label: 'Contact' },
   ];
 
-  const coachEmail = 'coach@vardhanchessacademy.com';
+  const coachEmail = 'coach@thevisionaryrookschessacademy.com';
 
   return (
     <footer className="bg-card border-t border-border">
@@ -20,7 +20,7 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2">
               <ChessKnightIcon className="h-8 w-8 text-primary" />
               <span className="text-xl font-bold font-headline text-primary">
-                Vardhan Chess Academy
+                The Visionary Rooks Chess Academy
               </span>
             </Link>
             <p className="text-foreground/70">
@@ -61,7 +61,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-border text-foreground/60">
-          <p>&copy; {new Date().getFullYear()} Vardhan Chess Academy. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} The Visionary Rooks Chess Academy. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

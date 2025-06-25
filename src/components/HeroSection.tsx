@@ -25,7 +25,7 @@ export function HeroSection() {
             Master Chess with Expert Coaching
           </h1>
           <p className="text-lg md:text-xl text-foreground/80">
-            Unlock your potential with personalized training programs at Vardhan Chess Academy. From beginner fundamentals to advanced strategies, we pave your path to mastery.
+            Unlock your potential with personalized training programs at The Visionary Rooks Chess Academy. From beginner fundamentals to advanced strategies, we pave your path to mastery.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button asChild size="lg" className="font-bold">

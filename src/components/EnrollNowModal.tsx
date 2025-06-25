@@ -66,7 +66,7 @@ export function EnrollNowModal({ children }: { children: React.ReactNode }) {
 
   function onSubmit(values: FormValues) {
     try {
-      const message = `Hello! I'm interested in Vardhan Chess Academy.
+      const message = `Hello! I'm interested in The Visionary Rooks Chess Academy.
 Name: ${values.name}
 Phone: ${values.phone}
 Email: ${values.email}
