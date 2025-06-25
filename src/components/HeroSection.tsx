@@ -17,7 +17,7 @@ export function HeroSection() {
   return (
     <section className="w-full bg-card py-20 md:py-32">
       <div className="container mx-auto grid md:grid-cols-2 gap-8 items-center">
-        <div>
+        <div className="flex justify-center">
            <RotatingChessPiece />
         </div>
         <div className="space-y-6 text-center md:text-left">
