@@ -44,7 +44,7 @@ const formSchema = z.object({
   email: z.string().email({
     message: "Please enter a valid email address.",
   }),
-  availability: z.enum(["15 mins", "30 mins", "1 hour"], {
+  availability: z.enum(["15-mins", "30-mins", "1-hour"], {
     required_error: "Please select your availability.",
   }),
 });
@@ -61,18 +61,19 @@ export function EnrollNowModal({ children }: { children: React.ReactNode }) {
       name: "",
       phone: "",
       email: "",
-      availability: "15 mins",
+      availability: "15-mins",
     },
   });
 
   const onSubmit = (values: FormValues) => {
-    const message =
-      "Hello! I'm interested in Visionary Rooks Chess Academy.\n" +
-      `Name: ${values.name}\n` +
-      `Phone: ${values.phone}\n` +
-      `Email: ${values.email}\n` +
-      `I'm available for a ${values.availability} call.\n` +
-      'Please get back to me. Thank you!';
+    let displayAvailability = "";
+    switch (values.availability) {
+        case "15-mins": displayAvailability = "15 mins"; break;
+        case "30-mins": displayAvailability = "30 mins"; break;
+        case "1-hour": displayAvailability = "1 hour"; break;
+    }
+    
+    const message = `Hello! I'm interested in Visionary Rooks Chess Academy.\nName: ${values.name}\nPhone: ${values.phone}\nEmail: ${values.email}\nI'm available for a ${displayAvailability} call.\nPlease get back to me. Thank you!`;
 
     const whatsappUrl = `https://wa.me/${COACH_PHONE_NUMBER}?text=${encodeURIComponent(
       message
@@ -153,9 +154,9 @@ export function EnrollNowModal({ children }: { children: React.ReactNode }) {
                       </Trigger>
                     </FormControl>
                     <SelectContent>
-                      <SelectItem value="15 mins">15 mins</SelectItem>
-                      <SelectItem value="30 mins">30 mins</SelectItem>
-                      <SelectItem value="1 hour">1 hour</SelectItem>
+                      <SelectItem value="15-mins">15 mins</SelectItem>
+                      <SelectItem value="30-mins">30 mins</SelectItem>
+                      <SelectItem value="1-hour">1 hour</SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />
