@@ -1,10 +1,6 @@
 "use client";
 
-import React from "react";
-
 export function RotatingChessPiece() {
-  const videoFileName = "chess-animation.webm";
-
   return (
     <div className="w-64 h-64 md:w-80 md:h-80 flex items-center justify-center">
       <video
@@ -16,7 +12,7 @@ export function RotatingChessPiece() {
         width="320"
         height="320"
       >
-        <source src={`/video/${videoFileName}`} type="video/webm" />
+        <source src="/video/chess-animation.webm" type="video/webm" />
         Your browser does not support the video tag.
       </video>
     </div>
