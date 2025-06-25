@@ -1,13 +1,22 @@
 "use client";
 
-import Lottie from "lottie-react";
 import React from "react";
-import animationData from "@/animations/chess.json";
 
 export function RotatingChessPiece() {
   return (
     <div className="w-64 h-64 md:w-80 md:h-80 flex items-center justify-center">
-        <Lottie animationData={animationData} loop={true} />
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-full h-full object-cover"
+        width="320"
+        height="320"
+      >
+        <source src="/video/animation.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 }
