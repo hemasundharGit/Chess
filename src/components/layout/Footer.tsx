@@ -18,7 +18,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1 space-y-4">
             <Link href="/" className="flex items-center gap-3">
-              <Image src="/animations/images/chess.png" alt="Visionary Rooks Chess Academy Logo" width={40} height={40} />
+              <Image src="/animations/images/chess.png" alt="Visionary Rooks Chess Academy Logo" width={48} height={48} />
               <span className="text-xl font-bold font-headline text-primary">
                 Visionary Rooks Chess Academy
               </span>
@@ -46,8 +46,8 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-foreground/80">
                 <Phone className="h-4 w-4 text-primary" />
-                <a href="tel:+911234567890" className="hover:text-primary transition-colors">
-                  +91 12345 67890
+                <a href="tel:+919581581595" className="hover:text-primary transition-colors">
+                  +91 95815 81595
                 </a>
               </li>
               <li className="flex items-center gap-2 text-foreground/80">

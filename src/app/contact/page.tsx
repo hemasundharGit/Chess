@@ -21,8 +21,8 @@ export default function ContactPage() {
                 <Phone className="h-8 w-8 text-primary mr-4 shrink-0" />
                 <div>
                   <h3 className="font-semibold text-lg">Phone</h3>
-                  <a href="tel:+911234567890" className="text-foreground/80 hover:text-primary">
-                    +91 12345 67890
+                  <a href="tel:+919581581595" className="text-foreground/80 hover:text-primary">
+                    +91 95815 81595
                   </a>
                 </div>
               </Card>

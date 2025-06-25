@@ -3,7 +3,7 @@
 import { WhatsAppIcon } from "./icons/WhatsAppIcon";
 
 export function FloatingWhatsAppButton() {
-  const coachPhoneNumber = "911234567890"; // Replace with actual number
+  const coachPhoneNumber = "919581581595";
   const preFilledMessage = "Hello! I'm interested in the chess coaching at Visionary Rooks Chess Academy.";
   const whatsappUrl = `https://wa.me/${coachPhoneNumber}?text=${encodeURIComponent(preFilledMessage)}`;
 

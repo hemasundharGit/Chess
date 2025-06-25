@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 
-const COACH_PHONE_NUMBER = '911234567890'; // Replace with actual number
+const COACH_PHONE_NUMBER = '919581581595';
 
 const courses = [
   {
