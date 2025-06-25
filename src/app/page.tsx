@@ -4,8 +4,8 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Crown, Users, Star, ArrowRight } from 'lucide-react';
-import { RotatingChessPiece } from '@/components/RotatingChessPiece';
 import { EnrollNowModal } from '@/components/EnrollNowModal';
+import { HeroSection } from '@/components/HeroSection';
 
 export default function Home() {
   const testimonials = [
@@ -32,31 +32,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center bg-background">
       {/* Hero Section */}
-      <section className="w-full bg-card py-20 md:py-32">
-        <div className="container mx-auto grid md:grid-cols-2 gap-8 items-center">
-          <div className="flex items-center justify-center">
-             <RotatingChessPiece />
-          </div>
-          <div className="space-y-6 text-center md:text-left">
-            <h1 className="text-4xl md:text-6xl font-headline font-bold text-primary tracking-tight">
-              Master Chess with Expert Coaching
-            </h1>
-            <p className="text-lg md:text-xl text-foreground/80">
-              Unlock your potential with personalized training programs at Vardhan Chess Academy. From beginner fundamentals to advanced strategies, we pave your path to mastery.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <Button asChild size="lg" className="font-bold">
-                <Link href="/courses">Explore Courses</Link>
-              </Button>
-              <EnrollNowModal>
-                <Button size="lg" variant="outline" className="font-bold">
-                  Enroll Now
-                </Button>
-              </EnrollNowModal>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSection />
 
       {/* Highlights Section */}
       <section className="w-full py-16 md:py-24 bg-background">
