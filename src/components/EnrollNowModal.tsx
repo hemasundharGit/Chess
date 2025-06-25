@@ -61,38 +61,33 @@ export function EnrollNowModal({ children }: { children: React.ReactNode }) {
       name: "",
       phone: "",
       email: "",
+      availability: "15 mins",
     },
   });
 
-  function onSubmit(values: FormValues) {
-    try {
-      const message = `Hello! I'm interested in Visionary Rooks Chess Academy.
-Name: ${values.name}
-Phone: ${values.phone}
-Email: ${values.email}
-I'm available for a ${values.availability} call.
-Please get back to me. Thank you!`;
+  const onSubmit = (values: FormValues) => {
+    const message =
+      "Hello! I'm interested in Visionary Rooks Chess Academy.\n" +
+      `Name: ${values.name}\n` +
+      `Phone: ${values.phone}\n` +
+      `Email: ${values.email}\n` +
+      `I'm available for a ${values.availability} call.\n` +
+      'Please get back to me. Thank you!';
 
-      const whatsappUrl = `https://wa.me/${COACH_PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
-      
-      window.open(whatsappUrl, "_blank");
-      
-      toast({
-        title: "Redirecting to WhatsApp...",
-        description: "Please continue the conversation there.",
-      });
+    const whatsappUrl = `https://wa.me/${COACH_PHONE_NUMBER}?text=${encodeURIComponent(
+      message
+    )}`;
 
-      setOpen(false);
-      form.reset();
+    window.open(whatsappUrl, '_blank');
 
-    } catch (error) {
-       toast({
-        variant: "destructive",
-        title: "Uh oh! Something went wrong.",
-        description: "There was a problem preparing your message. Please try again.",
-      });
-    }
-  }
+    toast({
+      title: 'Redirecting to WhatsApp...',
+      description: 'Please continue the conversation there.',
+    });
+
+    setOpen(false);
+    form.reset();
+  };
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
