@@ -66,7 +66,7 @@ export function EnrollNowModal({ children }: { children: React.ReactNode }) {
 
   function onSubmit(values: FormValues) {
     try {
-      const message = `Hello! I'm interested in The Visionary Rooks Chess Academy.
+      const message = `Hello! I'm interested in Visionary Rooks Chess Academy.
 Name: ${values.name}
 Phone: ${values.phone}
 Email: ${values.email}
@@ -155,7 +155,7 @@ Please get back to me. Thank you!`;
                     <FormControl>
                       <SelectTrigger>
                         <SelectValue placeholder="Select a time slot" />
-                      </SelectTrigger>
+                      </Trigger>
                     </FormControl>
                     <SelectContent>
                       <SelectItem value="15 mins">15 mins</SelectItem>

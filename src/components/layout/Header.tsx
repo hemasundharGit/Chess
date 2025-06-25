@@ -29,7 +29,7 @@ export function Header() {
         <Link href="/" className="flex items-center gap-2" onClick={closeMobileMenu}>
           <ChessKnightIcon className="h-8 w-8 text-primary" />
           <span className="text-xl font-bold font-headline text-primary">
-            The Visionary Rooks Chess Academy
+            Visionary Rooks Chess Academy
           </span>
         </Link>
 
