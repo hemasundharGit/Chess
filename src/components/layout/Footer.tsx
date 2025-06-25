@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Phone, Mail } from 'lucide-react';
-import { ChessKnightIcon } from '@/components/icons/ChessKnightIcon';
+import Image from 'next/image';
 
 export function Footer() {
   const navLinks = [
@@ -18,7 +18,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1 space-y-4">
             <Link href="/" className="flex items-center gap-2">
-              <ChessKnightIcon className="h-8 w-8 text-primary" />
+              <Image src="/animations/images/chess.png" alt="Visionary Rooks Chess Academy Logo" width={32} height={32} />
               <span className="text-xl font-bold font-headline text-primary">
                 Visionary Rooks Chess Academy
               </span>

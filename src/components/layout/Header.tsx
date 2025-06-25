@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { EnrollNowModal } from "@/components/EnrollNowModal";
-import { ChessKnightIcon } from "@/components/icons/ChessKnightIcon";
+import Image from "next/image";
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -27,7 +27,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2" onClick={closeMobileMenu}>
-          <ChessKnightIcon className="h-8 w-8 text-primary" />
+          <Image src="/animations/images/chess.png" alt="Visionary Rooks Chess Academy Logo" width={32} height={32} />
           <span className="text-xl font-bold font-headline text-primary">
             Visionary Rooks Chess Academy
           </span>
@@ -66,7 +66,7 @@ export function Header() {
               <div className="flex flex-col h-full">
                 <div className="flex justify-between items-center p-4 border-b">
                    <Link href="/" className="flex items-center gap-2" onClick={closeMobileMenu}>
-                    <ChessKnightIcon className="h-6 w-6 text-primary" />
+                    <Image src="/animations/images/chess.png" alt="Visionary Rooks Chess Academy Logo" width={24} height={24} />
                     <span className="text-lg font-bold font-headline text-primary">
                       Visionary Rooks
                     </span>
