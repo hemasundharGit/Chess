@@ -60,8 +60,9 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-border text-foreground/60">
-          <p>&copy; {new Date().getFullYear()} Visionary Rooks Chess Academy. All Rights Reserved.</p>
+        <div className="mt-12 pt-8 border-t border-border text-foreground/60 flex flex-col sm:flex-row justify-between items-center text-sm">
+          <p className="text-center sm:text-left">&copy; 2025 Visionary Rooks Chess Academy. All Rights Reserved.</p>
+          <p className="mt-2 sm:mt-0">Designed by Hema Sundharam kolla</p>
         </div>
       </div>
     </footer>
