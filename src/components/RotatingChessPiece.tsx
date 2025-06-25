@@ -14,7 +14,7 @@ export function RotatingChessPiece() {
         width="320"
         height="320"
       >
-        <source src="/video/animation.webm" type="video/webm" />
+        <source src="/video/Animation - 1750831616766.webm" type="video/webm" />
         Your browser does not support the video tag.
       </video>
     </div>
