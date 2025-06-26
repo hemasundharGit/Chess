@@ -1,7 +1,7 @@
 "use client";
 
 import Lottie from "lottie-react";
-import animationData from "@/animations/homepage-hero-animation.json";
+import animationData from "@/animations/chess-animation.json";
 
 export function RotatingChessPiece() {
   // Check if animationData is an empty object, and show a placeholder if so.
