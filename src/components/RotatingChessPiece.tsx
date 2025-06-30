@@ -1,7 +1,7 @@
 "use client";
 
 import Lottie from "lottie-react";
-import animationData from "@/animations/Animation - 1750868903965.json";
+import animationData from "../animations/Animation - 1750868903965.json";
 
 export function RotatingChessPiece() {
   return (
