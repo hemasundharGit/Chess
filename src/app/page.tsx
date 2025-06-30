@@ -81,11 +81,10 @@ export default function Home() {
           <div className="grid md:grid-cols-5 gap-12 items-center">
             <div className="md:col-span-2 flex justify-center">
               <Image
-                src="https://placehold.co/400x400.png"
+                src="/images/coach.jpg"
                 alt="Coach"
                 width={300}
                 height={300}
-                data-ai-hint="chess coach portrait"
                 className="rounded-full border-4 border-primary shadow-2xl aspect-square object-cover"
               />
             </div>
