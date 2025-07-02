@@ -43,7 +43,7 @@ export default function Home() {
                 <div className="mx-auto bg-primary/20 p-4 rounded-full w-fit">
                   <Users className="h-10 w-10 text-primary" />
                 </div>
-                <CardTitle className="font-headline text-3xl pt-2">2500+</CardTitle>
+                <CardTitle className="font-headline text-3xl pt-2">250+</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-lg text-foreground/80">Students Trained</p>
