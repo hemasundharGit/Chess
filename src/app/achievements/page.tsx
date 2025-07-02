@@ -27,7 +27,7 @@ const achievements = [
     year: "Ongoing",
     description: "Our structured intermediate program has consistently helped dedicated students achieve significant FIDE rating improvements in a short period.",
     icon: <Star className="h-10 w-10 text-primary" />,
-    image: "https://placehold.co/600x400.png",
+    image: "/animations/images/ach3.jfif",
     dataAiHint: "chess rating graph",
   },
    {
