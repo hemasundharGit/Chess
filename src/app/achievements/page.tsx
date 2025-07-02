@@ -7,7 +7,7 @@ const achievements = [
     title: "2025 national school chess championship",
     student: "Y. Premi Rakshitha",
     year: "2025",
-    description: "Y. Premi Rakshitha demonstrated exceptional skill and determination, securing first place against a field of over 200 talented players from across the country.",
+    description: "Y. Premi Rakshitha demonstrated exceptional skill and determination, securing 12th place against a field of over 200 talented players from across the country.",
     icon: <Trophy className="h-10 w-10 text-primary" />,
     image: "/animations/images/ach1.jfif",
     dataAiHint: "chess tournament winner",
