@@ -10,7 +10,7 @@ const coaches = [
     accolades: ["National Team Player (Andhra Pradesh)", "International & State Level Champion"],
   },
   {
-    name: "Jane Doe",
+    name: "Y. Mahesh",
     bio: "Jane specializes in working with beginner and intermediate players, making chess fun and accessible. She focuses on tactical puzzles and endgame principles to build a solid foundation for her students.",
     image: "/animations/images/mahesh.jpg",
     accolades: ["State Women's Champion", "Expert in Youth Coaching"],
