@@ -31,13 +31,13 @@ const achievements = [
     dataAiHint: "chess award",
   },
    {
-    title: "School District Chess League Champions",
-    student: "The Visionary Rooks Team",
-    year: "2023",
-    description: "Our academy team dominated the local school district league, winning the team trophy and several individual board prizes.",
+    title: "Supernationals 2025 - Class Championship",
+    student: "Student Name",
+    year: "2025",
+    description: "An outstanding victory at Supernationals 2025, securing the Class Championship in the 1000-1099 rating section.",
     icon: <Trophy className="h-10 w-10 text-primary" />,
     image: "/animations/images/ach4.jfif",
-    dataAiHint: "chess team photo",
+    dataAiHint: "chess championship",
   },
   {
     title: "City Junior Chess Championship",
