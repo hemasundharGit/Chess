@@ -18,13 +18,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1 space-y-4">
             <Link href="/" className="flex items-center gap-3">
-              <Image key="logo-footer" src="/animations/images/chess.png" alt="Visionary Rooks Chess Academy Logo" width={48} height={48} />
+              <Image key="logo-footer" src="/animations/images/chess.png?v=2" alt="VR Chess Academy Logo" width={48} height={48} />
               <span className="text-xl font-bold font-headline text-primary">
-                Visionary Rooks Chess Academy
+                VR CHESS ACADEMY
               </span>
             </Link>
             <p className="text-foreground/70">
-              Elevating chess skills from beginner to master.
+              Where Focus Meets Finesse.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-border text-foreground/60 flex flex-col sm:flex-row justify-between items-center text-sm">
-          <p className="text-center sm:text-left">&copy; 2025 Visionary Rooks Chess Academy. All Rights Reserved.</p>
+          <p className="text-center sm:text-left">&copy; 2025 VR Chess Academy. All Rights Reserved.</p>
           <p className="mt-2 sm:mt-0">Designed by Hema Sundharam kolla</p>
         </div>
       </div>

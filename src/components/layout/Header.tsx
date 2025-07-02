@@ -27,9 +27,9 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-3" onClick={closeMobileMenu}>
-          <Image key="logo-header" src="/animations/images/chess.png" alt="Visionary Rooks Chess Academy Logo" width={40} height={40} />
+          <Image key="logo-header" src="/animations/images/chess.png?v=2" alt="VR Chess Academy Logo" width={40} height={40} />
           <span className="text-xl font-bold font-headline text-primary">
-            Visionary Rooks Chess Academy
+            VR CHESS ACADEMY
           </span>
         </Link>
 
@@ -66,9 +66,9 @@ export function Header() {
               <div className="flex flex-col h-full">
                 <div className="flex justify-between items-center p-4 border-b">
                    <Link href="/" className="flex items-center gap-2" onClick={closeMobileMenu}>
-                    <Image key="logo-mobile" src="/animations/images/chess.png" alt="Visionary Rooks Chess Academy Logo" width={32} height={32} />
+                    <Image key="logo-mobile" src="/animations/images/chess.png?v=2" alt="VR Chess Academy Logo" width={32} height={32} />
                     <span className="text-lg font-bold font-headline text-primary">
-                      Visionary Rooks
+                      VR CHESS ACADEMY
                     </span>
                   </Link>
                   <Button variant="ghost" size="icon" onClick={closeMobileMenu}>

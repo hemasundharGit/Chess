@@ -4,7 +4,7 @@ import { WhatsAppIcon } from "./icons/WhatsAppIcon";
 
 export function FloatingWhatsAppButton() {
   const coachPhoneNumber = "919581581595";
-  const preFilledMessage = "Hello! I'm interested in the chess coaching at Visionary Rooks Chess Academy.";
+  const preFilledMessage = "Hello! I'm interested in the chess coaching at VR Chess Academy.";
   const whatsappUrl = `https://wa.me/${coachPhoneNumber}?text=${encodeURIComponent(preFilledMessage)}`;
 
   return (

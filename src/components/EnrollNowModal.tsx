@@ -69,7 +69,7 @@ export function EnrollNowModal({ children }: { children: React.ReactNode }) {
     );
     const displayAvailability = selectedOption ? selectedOption.label : values.availability;
 
-    const message = `Hello! I'm interested in Visionary Rooks Chess Academy.\nName: ${values.name}\nPhone: ${values.phone}\nEmail: ${values.email}\nI'm available for a ${displayAvailability} call.\nPlease get back to me. Thank you!`;
+    const message = `Hello! I'm interested in VR Chess Academy.\nName: ${values.name}\nPhone: ${values.phone}\nEmail: ${values.email}\nI'm available for a ${displayAvailability} call.\nPlease get back to me. Thank you!`;
     const whatsappUrl = `https://wa.me/${COACH_PHONE_NUMBER}?text=${encodeURIComponent(
       message
     )}`;

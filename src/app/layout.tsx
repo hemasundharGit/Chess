@@ -7,8 +7,8 @@ import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsAppButton } from "@/components/FloatingWhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Visionary Rooks Chess Academy",
-  description: "Master Chess with Expert Coaching. Join Visionary Rooks Chess Academy to elevate your game with personalized training programs.",
+  title: "VR CHESS ACADEMY",
+  description: "Where Focus Meets Finesse. Join VR Chess Academy to elevate your game with personalized training programs.",
   keywords: "chess, chess coaching, chess academy, chess lessons, learn chess, chess master",
 };
 
