@@ -10,22 +10,22 @@ import { HeroSection } from '@/components/HeroSection';
 export default function Home() {
   const testimonials = [
     {
-      name: 'Anika Sharma',
+      name: 'Parent of Y. Premi Rakshitha',
       title: 'Parent of a Student',
-      quote: "The coaching is exceptional. My son's rating jumped 200 points in just three months. The personalized attention to his weaknesses was key.",
-      avatar: 'AS',
+      quote: "The coaching is exceptional. My daughter's rating jumped 200 points in just three months. The personalized attention to her weaknesses was key.",
+      avatar: 'YR',
     },
     {
-      name: 'Rohan Verma',
+      name: 'Karthik Vihan',
       title: 'Intermediate Player',
       quote: 'I finally broke the 1600 barrier thanks to the advanced strategy sessions. The structured curriculum makes a huge difference.',
-      avatar: 'RV',
+      avatar: 'KV',
     },
      {
-      name: 'Priya K.',
-      title: 'Beginner Student',
+      name: 'charith sai',
+      title: 'Tournament Player',
       quote: 'I was a complete beginner and felt intimidated by chess. The academy made learning fun and accessible. I now play confidently in tournaments!',
-      avatar: 'PK',
+      avatar: 'CS',
     },
   ];
 
