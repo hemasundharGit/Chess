@@ -64,7 +64,7 @@ export function Footer() {
 
         <div className="mt-10 pt-6 border-t border-border text-foreground/60 flex flex-col sm:flex-row justify-between items-center text-sm">
           <p className="text-center sm:text-left">&copy; 2025 VR Chess Academy. All Rights Reserved.</p>
-          <p className="mt-2 sm:mt-0">Designed by Hema Sundharam kolla</p>
+          <p className="mt-2 sm:mt-0">Designed by P.satya sai vardhan</p>
         </div>
       </div>
     </footer>

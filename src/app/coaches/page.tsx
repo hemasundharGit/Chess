@@ -4,10 +4,10 @@ import { ShieldCheck } from "lucide-react";
 
 const coaches = [
   {
-    name: "Hema Sundharam Kolla",
+    name: "P.satya sai vardhan",
     title: "Head Coach & Founder",
     rating: "FIDE Rating: 2200+",
-    bio: "With over 15 years of competitive chess experience, Hema has a passion for teaching and a proven track record of nurturing talent. His coaching philosophy centers on building strong fundamentals and developing sharp tactical and strategic thinking.",
+    bio: "With over 15 years of competitive chess experience, he has a passion for teaching and a proven track record of nurturing talent. His coaching philosophy centers on building strong fundamentals and developing sharp tactical and strategic thinking.",
     image: "/animations/images/Coach.jpg",
     accolades: ["National Level Champion", "Certified FIDE Instructor"],
   },
