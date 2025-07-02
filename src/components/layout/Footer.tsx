@@ -18,10 +18,10 @@ export function Footer() {
     <footer className="bg-card border-t border-border">
       <div className="container mx-auto py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="md:col-span-1 space-y-4">
+          <div className="md:col-span-2 space-y-4">
             <Link href="/" className="flex items-center gap-3">
-              <Image key="logo-footer" src="/animations/images/chess.png?v=2" alt="VR Chess Academy Logo" width={48} height={48} />
-              <span className="text-xl font-bold font-headline text-primary">
+              <Image key="logo-footer" src="/animations/images/chess.png?v=2" alt="VR Chess Academy Logo" width={56} height={56} />
+              <span className="text-2xl font-bold font-headline text-primary">
                 VR CHESS ACADEMY
               </span>
             </Link>
