@@ -18,6 +18,8 @@ export function Header() {
     { href: "/", label: "Home" },
     { href: "/courses", label: "Courses" },
     { href: "/schedule", label: "Schedule" },
+    { href: "/coaches", label: "Coaches" },
+    { href: "/achievements", label: "Achievements" },
     { href: "/contact", label: "Contact" },
   ];
 
