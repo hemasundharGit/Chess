@@ -11,9 +11,9 @@ const coaches = [
   },
   {
     name: "Y. Mahesh",
-    bio: "Jane specializes in working with beginner and intermediate players, making chess fun and accessible. She focuses on tactical puzzles and endgame principles to build a solid foundation for her students.",
+    bio: "With over 10 years of coaching experience, Y. Mahesh is a FIDE International Player. Under his guidance, many students have achieved international FIDE ratings. A special mention goes to his student, Y. Premi Rakshitha, who became the U-11 state champion and was selected for nationals under his guidance.",
     image: "/animations/images/mahesh.jpg",
-    accolades: ["State Women's Champion", "Expert in Youth Coaching"],
+    accolades: ["10+ Years Coaching Experience", "FIDE International Player", "Coached U-11 State Champion"],
   },
 ];
 
@@ -38,7 +38,6 @@ export default function CoachesPage() {
                     alt={coach.name}
                     fill
                     className="object-cover"
-                    {...(coach.dataAiHint ? {'data-ai-hint': coach.dataAiHint} : {})}
                   />
                 </div>
                 <div className="md:col-span-2 p-8">
