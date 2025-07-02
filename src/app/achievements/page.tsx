@@ -39,15 +39,6 @@ const achievements = [
     image: "/animations/images/ach4.jfif",
     dataAiHint: "chess championship",
   },
-  {
-    title: "City Junior Chess Championship",
-    student: "Aarav Singh",
-    year: "2023",
-    description: "Aarav clinched the title in the city-level junior championship, showcasing his growing strategic prowess and cool-headed play under pressure.",
-    icon: <Award className="h-10 w-10 text-primary" />,
-    image: "https://placehold.co/600x400.png",
-    dataAiHint: "young chess player",
-  },
 ];
 
 export default function AchievementsPage() {
