@@ -81,7 +81,7 @@ export default function Home() {
           <div className="grid md:grid-cols-5 gap-12 items-center">
             <div className="md:col-span-2 flex justify-center">
               <Image
-                src="/animations/images/Coach.jpg"
+                src="/animations/images/mahesh.jpg"
                 alt="Coach"
                 width={300}
                 height={300}
