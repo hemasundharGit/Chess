@@ -94,7 +94,7 @@ export default function Home() {
                 With over 15 years of competitive chess experience and a FIDE rating of 2200+, our head coach brings a wealth of knowledge, passion, and a proven track record of nurturing talent. His coaching philosophy centers on building strong fundamentals and developing sharp tactical and strategic thinking.
               </p>
               <Button asChild variant="link" className="text-lg font-bold text-primary px-0">
-                <Link href="/contact">Learn More <ArrowRight className="ml-2 h-5 w-5" /></Link>
+                <Link href="/coaches">Learn More <ArrowRight className="ml-2 h-5 w-5" /></Link>
               </Button>
             </div>
           </div>
