@@ -1,11 +1,10 @@
 import Image from 'next/image';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ShieldCheck } from "lucide-react";
 
 const coaches = [
   {
     name: "P.satya sai vardhan",
-    title: "Head Coach & Founder",
     rating: "FIDE Rating: 2200+",
     bio: "With over 15 years of competitive chess experience, he has a passion for teaching and a proven track record of nurturing talent. His coaching philosophy centers on building strong fundamentals and developing sharp tactical and strategic thinking.",
     image: "/animations/images/Coach.jpg",
@@ -13,7 +12,6 @@ const coaches = [
   },
   {
     name: "Jane Doe",
-    title: "Assistant Coach",
     rating: "FIDE Rating: 1900+",
     bio: "Jane specializes in working with beginner and intermediate players, making chess fun and accessible. She focuses on tactical puzzles and endgame principles to build a solid foundation for her students.",
     image: "https://placehold.co/400x400.png",
@@ -49,8 +47,7 @@ export default function CoachesPage() {
                 <div className="md:col-span-2 p-8">
                   <CardHeader className="p-0">
                     <CardTitle className="font-headline text-3xl text-primary">{coach.name}</CardTitle>
-                    <CardDescription className="text-lg text-accent font-semibold">{coach.title}</CardDescription>
-                    <p className="text-md font-bold text-foreground/80">{coach.rating}</p>
+                    <p className="text-md font-bold text-foreground/80 pt-2">{coach.rating}</p>
                   </CardHeader>
                   <CardContent className="p-0 mt-4">
                     <p className="text-foreground/90 mb-6">{coach.bio}</p>
