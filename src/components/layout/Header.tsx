@@ -15,7 +15,6 @@ export function Header() {
   const pathname = usePathname();
 
   const navLinks = [
-    { href: "/", label: "Home" },
     { href: "/courses", label: "Courses" },
     { href: "/schedule", label: "Schedule" },
     { href: "/coaches", label: "Coaches" },
@@ -28,7 +27,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-3" onClick={closeMobileMenu}>
-          <Image key="logo-header" src="/animations/images/chess.png?v=2" alt="VR Chess Academy Logo" width={48} height={48} />
+          <Image key="logo-header" src="/animations/images/chess.png?v=2" alt="VR Chess Academy Logo" width={56} height={56} />
           <span className="text-2xl font-bold font-headline text-primary">
             VR CHESS ACADEMY
           </span>
