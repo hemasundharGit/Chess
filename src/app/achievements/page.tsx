@@ -36,7 +36,7 @@ const achievements = [
     year: "2023",
     description: "Our academy team dominated the local school district league, winning the team trophy and several individual board prizes.",
     icon: <Trophy className="h-10 w-10 text-primary" />,
-    image: "https://placehold.co/600x400.png",
+    image: "/animations/images/ach4.jfif",
     dataAiHint: "chess team photo",
   },
   {
