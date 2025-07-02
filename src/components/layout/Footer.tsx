@@ -12,7 +12,7 @@ export function Footer() {
     { href: '/contact', label: 'Contact' },
   ];
 
-  const coachEmail = 'coach@thevisionaryrookschessacademy.com';
+  const coachEmail = 'satyavardhan55@gmail.com';
 
   return (
     <footer id="page-footer" className="bg-card border-t border-border">
