@@ -10,24 +10,18 @@ const courses = [
     title: 'Beginner Program',
     description: 'Master the fundamentals of chess, from piece movement to basic checkmates and opening principles.',
     features: ['Rules & Board Setup', 'Basic Tactics & Puzzles', 'Opening Principles', 'Simple Endgames'],
-    duration: '12 Weeks',
-    fee: '₹6,000',
     enquiryMessage: "Hello! I'm interested in the Beginner Program at VR Chess Academy. Could you please provide more details?",
   },
   {
     title: 'Intermediate Program',
     description: 'Deepen your strategic understanding, learn complex tactics, and improve your positional play.',
     features: ['Advanced Tactics', 'Positional Understanding', 'Middlegame Strategy', 'Complex Endgames'],
-    duration: '16 Weeks',
-    fee: '₹9,000',
     enquiryMessage: "Hello! I'm interested in the Intermediate Program at VR Chess Academy. Could you please provide more details?",
   },
   {
     title: 'Advanced Program',
     description: 'For serious tournament players looking to refine their opening repertoire and master advanced concepts.',
     features: ['Opening Repertoire Building', 'Advanced Strategic Planning', 'Prophylactic Thinking', 'Grandmaster Game Analysis'],
-    duration: '20 Weeks',
-    fee: '₹15,000',
     enquiryMessage: "Hello! I'm interested in the Advanced Program at VR Chess Academy. Could you please provide more details?",
   },
 ];
@@ -61,16 +55,6 @@ export default function CoursesPage() {
                 </ul>
               </CardContent>
               <CardFooter className="flex flex-col items-start space-y-4 pt-6">
-                <div className="w-full flex justify-between items-baseline">
-                   <div>
-                      <p className="text-sm text-foreground/70">Duration</p>
-                      <p className="font-semibold">{course.duration}</p>
-                   </div>
-                   <div>
-                      <p className="text-sm text-foreground/70">Fee</p>
-                      <p className="text-2xl font-bold font-headline text-primary">{course.fee}</p>
-                   </div>
-                </div>
                  <Button asChild className="w-full">
                   <Link href={`https://wa.me/${COACH_PHONE_NUMBER}?text=${encodeURIComponent(course.enquiryMessage)}`} target="_blank" rel="noopener noreferrer">
                     Know More
