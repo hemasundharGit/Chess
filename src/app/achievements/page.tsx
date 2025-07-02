@@ -13,7 +13,7 @@ const achievements = [
     dataAiHint: "chess tournament winner",
   },
   {
-    title: "State Level Blitz Tournament Winner",
+    title: "Ap state open chess tournament U-9 age category 1st place",
     student: "Anika Sharma's Son",
     year: "2023",
     description: "A stunning performance in the blitz category, showcasing quick thinking and sharp tactical awareness to win the championship.",
