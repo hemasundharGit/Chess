@@ -18,7 +18,7 @@ const achievements = [
     year: "2023",
     description: "A stunning performance in the blitz category, showcasing quick thinking and sharp tactical awareness to win the championship.",
     icon: <Award className="h-10 w-10 text-primary" />,
-    image: "https://placehold.co/600x400.png",
+    image: "/animations/images/ach2.jfif",
     dataAiHint: "boy playing chess",
   },
   {
