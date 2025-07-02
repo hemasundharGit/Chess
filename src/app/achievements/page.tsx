@@ -5,9 +5,9 @@ import Image from 'next/image';
 const achievements = [
   {
     title: "National U-14 Championship Victory",
-    student: "Rohan Verma",
+    student: "Y. Premi Rakshitha",
     year: "2024",
-    description: "Rohan demonstrated exceptional skill and determination, securing first place against a field of over 200 talented players from across the country.",
+    description: "Y. Premi Rakshitha demonstrated exceptional skill and determination, securing first place against a field of over 200 talented players from across the country.",
     icon: <Trophy className="h-10 w-10 text-primary" />,
     image: "/animations/images/ach1.jfif",
     dataAiHint: "chess tournament winner",
