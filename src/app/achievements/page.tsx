@@ -14,7 +14,7 @@ const achievements = [
   },
   {
     title: "Ap state open chess tournament U-9 age category 1st place",
-    student: "Anika Sharma's Son",
+    student: "Karthik Vihan",
     year: "2023",
     description: "A stunning performance in the blitz category, showcasing quick thinking and sharp tactical awareness to win the championship.",
     icon: <Award className="h-10 w-10 text-primary" />,
