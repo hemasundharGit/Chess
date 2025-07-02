@@ -5,14 +5,12 @@ import { ShieldCheck } from "lucide-react";
 const coaches = [
   {
     name: "P.satya sai vardhan",
-    rating: "FIDE Rating: 2200+",
     bio: "With over 15 years of competitive chess experience, he has a passion for teaching and a proven track record of nurturing talent. His coaching philosophy centers on building strong fundamentals and developing sharp tactical and strategic thinking.",
     image: "/animations/images/Coach.jpg",
     accolades: ["National Level Champion", "Certified FIDE Instructor"],
   },
   {
     name: "Jane Doe",
-    rating: "FIDE Rating: 1900+",
     bio: "Jane specializes in working with beginner and intermediate players, making chess fun and accessible. She focuses on tactical puzzles and endgame principles to build a solid foundation for her students.",
     image: "https://placehold.co/400x400.png",
     dataAiHint: "woman portrait",
@@ -45,11 +43,10 @@ export default function CoachesPage() {
                   />
                 </div>
                 <div className="md:col-span-2 p-8">
-                  <CardHeader className="p-0">
+                  <CardHeader className="p-0 mb-4">
                     <CardTitle className="font-headline text-3xl text-primary">{coach.name}</CardTitle>
-                    <p className="text-md font-bold text-foreground/80 pt-2">{coach.rating}</p>
                   </CardHeader>
-                  <CardContent className="p-0 mt-4">
+                  <CardContent className="p-0">
                     <p className="text-foreground/90 mb-6">{coach.bio}</p>
                     <div className="space-y-3">
                       {coach.accolades.map((accolade) => (
