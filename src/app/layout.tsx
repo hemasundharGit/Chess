@@ -28,8 +28,8 @@ export default function RootLayout({
         <Header />
         <main className="flex-grow">
           {children}
-          <FloatingWhatsAppButton />
         </main>
+        <FloatingWhatsAppButton />
         <Footer />
         <Toaster />
       </body>

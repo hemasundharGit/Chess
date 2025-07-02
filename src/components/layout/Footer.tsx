@@ -15,7 +15,7 @@ export function Footer() {
   const coachEmail = 'coach@thevisionaryrookschessacademy.com';
 
   return (
-    <footer className="bg-card border-t border-border">
+    <footer id="page-footer" className="bg-card border-t border-border">
       <div className="container mx-auto py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2 space-y-4">
