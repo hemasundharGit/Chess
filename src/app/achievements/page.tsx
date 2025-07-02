@@ -23,7 +23,7 @@ const achievements = [
   },
   {
     title: "AP State Open Chess Tournament U-13 Age Category 2nd Place",
-    student: "Student Name",
+    student: "charith sai",
     year: "",
     description: "A fantastic result in a highly competitive state-level tournament, securing the runner-up position in the U-13 category.",
     icon: <Award className="h-10 w-10 text-primary" />,
