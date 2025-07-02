@@ -5,9 +5,9 @@ import { ShieldCheck } from "lucide-react";
 const coaches = [
   {
     name: "P.satya sai vardhan",
-    bio: "With over 15 years of competitive chess experience, he has a passion for teaching and a proven track record of nurturing talent. His coaching philosophy centers on building strong fundamentals and developing sharp tactical and strategic thinking.",
+    bio: "With over 5 years of coaching experience, he boasts a decorated career as a player. He represented Andhra Pradesh in the National Men's Team Chess Championship for two consecutive years (2020 & 2021) and has secured championships in various international rating tournaments, alongside numerous state and district titles.",
     image: "/animations/images/Coach.jpg",
-    accolades: ["National Level Champion", "Certified FIDE Instructor"],
+    accolades: ["National Team Player (Andhra Pradesh)", "International & State Level Champion"],
   },
   {
     name: "Jane Doe",
