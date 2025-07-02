@@ -31,7 +31,7 @@ const achievements = [
     dataAiHint: "chess award",
   },
    {
-    title: "Supernationals 2025 - Class Championship",
+    title: "Supernationals 2025 and securing Class championship 1000-1099 section.",
     student: "Student Name",
     year: "2025",
     description: "An outstanding victory at Supernationals 2025, securing the Class Championship in the 1000-1099 rating section.",
