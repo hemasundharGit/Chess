@@ -20,7 +20,6 @@ export function Header() {
     { href: "/schedule", label: "Schedule" },
     { href: "/coaches", label: "Coaches" },
     { href: "/achievements", label: "Achievements" },
-    { href: "/contact", label: "Contact" },
   ];
 
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
