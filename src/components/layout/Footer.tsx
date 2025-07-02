@@ -16,9 +16,9 @@ export function Footer() {
 
   return (
     <footer id="page-footer" className="bg-card border-t border-border">
-      <div className="container mx-auto py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="md:col-span-2 space-y-4">
+      <div className="container mx-auto py-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="space-y-4">
             <Link href="/" className="flex items-center gap-3">
               <Image key="logo-footer" src="/animations/images/chess.png?v=2" alt="VR Chess Academy Logo" width={56} height={56} />
               <span className="text-2xl font-bold font-headline text-primary">
@@ -62,7 +62,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-border text-foreground/60 flex flex-col sm:flex-row justify-between items-center text-sm">
+        <div className="mt-10 pt-6 border-t border-border text-foreground/60 flex flex-col sm:flex-row justify-between items-center text-sm">
           <p className="text-center sm:text-left">&copy; 2025 VR Chess Academy. All Rights Reserved.</p>
           <p className="mt-2 sm:mt-0">Designed by Hema Sundharam kolla</p>
         </div>
