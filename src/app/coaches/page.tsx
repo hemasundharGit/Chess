@@ -6,7 +6,7 @@ const coaches = [
   {
     name: "P.satya sai vardhan",
     bio: "With over 5 years of coaching experience, he boasts a decorated career as a player. He represented Andhra Pradesh in the National Men's Team Chess Championship for two consecutive years (2020 & 2021) and has secured championships in various international rating tournaments, alongside numerous state and district titles.",
-    image: "/animations/images/mahesh.jpg",
+    image: "/animations/images/coach.jpg",
     accolades: ["National Team Player (Andhra Pradesh)", "International & State Level Champion"],
   },
   {
