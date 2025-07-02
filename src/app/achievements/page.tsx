@@ -9,7 +9,7 @@ const achievements = [
     year: "2024",
     description: "Rohan demonstrated exceptional skill and determination, securing first place against a field of over 200 talented players from across the country.",
     icon: <Trophy className="h-10 w-10 text-primary" />,
-    image: "https://placehold.co/600x400.png",
+    image: "/animations/images/ach1.jfif",
     dataAiHint: "chess tournament winner",
   },
   {
